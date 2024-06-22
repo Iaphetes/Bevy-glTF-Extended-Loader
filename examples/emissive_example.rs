@@ -1,16 +1,12 @@
 use bevy::{
-    core_pipeline::{
-        bloom::{BloomCompositeMode, BloomSettings},
-        tonemapping::Tonemapping,
-    },
+    core_pipeline::{bloom::BloomSettings, tonemapping::Tonemapping},
     prelude::*,
-    reflect::DynamicTypePath,
 };
-use bevy_gltf_extended_loader::{SpawnAsset, Spawner};
+use bevy_gltf_extended_loader::{GLTFExtender, SpawnAsset};
 fn main() {
     App::new()
         .add_systems(Startup, setup)
-        .add_plugins((DefaultPlugins, Spawner))
+        .add_plugins((DefaultPlugins, GLTFExtender))
         .run();
 }
 fn setup(mut commands: Commands, assets: Res<AssetServer>) {

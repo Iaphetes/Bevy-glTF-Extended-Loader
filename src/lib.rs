@@ -1,9 +1,9 @@
 use bevy::{gltf::Gltf, prelude::*};
 
-pub struct Spawner;
+pub struct GLTFExtender;
 pub struct ExtendedGLTFSpawner;
 
-impl Plugin for Spawner {
+impl Plugin for GLTFExtender {
     fn build(&self, app: &mut App) {
         app.add_systems(Update, (spawn_gltf_objects, extend_material));
     }

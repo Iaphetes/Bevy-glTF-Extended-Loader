@@ -6,6 +6,11 @@ This tool applies some (at the moment one) [Khronos glTF Extensions](https://git
 Here is a list of the currently supported extensions. Feel free to ask for more or even open a pull request, if you have some implementation:
 - [x] KHR_materials_emissive_strength
 
+## Examples
+### Emissive Example
+```
+cargo run --example emissive_example
+```
 ## Changes
 ### 0.1.0 Initial release
 #### Features
