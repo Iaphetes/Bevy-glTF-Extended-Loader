@@ -2,7 +2,7 @@ use bevy::{
     core_pipeline::{bloom::BloomSettings, tonemapping::Tonemapping},
     prelude::*,
 };
-use bevy_gltf_extended_loader::{GLTFExtender, SpawnAsset};
+use bgel::{GLTFExtender, SpawnAsset};
 fn main() {
     App::new()
         .add_systems(Startup, setup)
