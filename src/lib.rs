@@ -46,8 +46,8 @@ pub fn spawn_gltf_objects(
                     }
                 }
             }
+            commands.entity(entity).despawn();
         }
-        commands.entity(entity).despawn();
     }
 }
 

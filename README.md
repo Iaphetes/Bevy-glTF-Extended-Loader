@@ -33,3 +33,6 @@ Shows an emissive example with massive bloom.
 #### Changes
 - The library is now internally also called bgel
 - Fixed usage section in readme
+### 0.1.2
+#### Fixes
+- Complex models wouldn't be extended, since they take too long to load. Now only after the asset has been found, the request for modification is deleted.
